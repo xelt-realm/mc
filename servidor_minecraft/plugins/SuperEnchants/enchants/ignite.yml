@@ -1,0 +1,25 @@
+display_name: "<red>Ignite"
+description:
+  - "<gray>Set targets on fire with your arrows."
+max_level: 3
+applicable_items:
+  - BOWS
+trigger: PROJECTILE_HIT
+target: ALL_ENTITIES
+enchanting_table:
+  enabled: true
+  weight: 4
+  min_cost: 10
+  max_cost: 25
+
+villager_trades:
+  enabled: true
+  weight: 4
+  base_emerald_cost: 10
+  max_emerald_cost: 22
+actions:
+  fire:
+    type: set_fire
+    duration:
+      base: 40
+      per_level: 20

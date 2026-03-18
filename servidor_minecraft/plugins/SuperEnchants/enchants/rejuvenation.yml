@@ -1,0 +1,31 @@
+display_name: "<red>Rejuvenation"
+description:
+  - "<gray>Passively regenerate health."
+max_level: 3
+applicable_items:
+  - CHESTPLATES
+trigger: PASSIVE
+target: SELF
+enchanting_table:
+  enabled: true
+  weight: 3
+  min_cost: 15
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 3
+  base_emerald_cost: 15
+  max_emerald_cost: 28
+actions:
+  regen:
+    type: potion_effect
+    effect: regeneration
+    duration:
+      scaling: fixed
+      value: 400
+    amplifier:
+      base: 0
+      per_level: 0
+    particles: false
+    icon: true

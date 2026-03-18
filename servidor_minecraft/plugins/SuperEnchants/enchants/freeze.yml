@@ -1,0 +1,55 @@
+display_name: "<aqua>Freeze"
+description:
+  - "<gray>Temporarily freeze a player when you hit them."
+max_level: 3
+applicable_items:
+  - SWORDS
+  - AXES
+trigger: ATTACK_ENTITY
+target: ALL_ENTITIES
+enchanting_table:
+  enabled: true
+  weight: 4
+  min_cost: 10
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 4
+  base_emerald_cost: 10
+  max_emerald_cost: 22
+sound:
+  type: block.glass.break
+  volume: 0.7
+  pitch: 1.3
+
+particle:
+  type: SNOWFLAKE
+  count: 15
+  spread: 0.5
+  speed: 0.1
+  location: TARGET
+
+actions:
+  slow:
+    type: potion_effect
+    effect: slowness
+    duration:
+      base: 40
+      per_level: 20
+    amplifier:
+      base: 1
+      per_level: 1
+    particles: true
+    icon: true
+  fatigue:
+    type: potion_effect
+    effect: mining_fatigue
+    duration:
+      base: 40
+      per_level: 20
+    amplifier:
+      scaling: fixed
+      value: 2
+    particles: false
+    icon: false

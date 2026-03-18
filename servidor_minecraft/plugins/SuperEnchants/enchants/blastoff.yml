@@ -1,0 +1,43 @@
+display_name: "<gold>Blastoff"
+description:
+  - "<gray>On low health, chance to blast off into the sky when hit."
+max_level: 3
+applicable_items:
+  - BOOTS
+trigger: TAKE_DAMAGE
+target: SELF
+chance:
+  base: 0.15
+  per_level: 0.1
+enchanting_table:
+  enabled: true
+  weight: 3
+  min_cost: 15
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 3
+  base_emerald_cost: 15
+  max_emerald_cost: 28
+sound:
+  type: entity.generic.explode
+  volume: 0.8
+  pitch: 1.2
+
+particle:
+  type: EXPLOSION_EMITTER
+  count: 1
+  spread: 0.5
+  speed: 0.1
+  location: SELF
+
+actions:
+  launch:
+    type: velocity
+    direction: "UP"
+    power:
+      base: 1.5
+      per_level: 0.5
+    apply_to: "SELF"
+    no_fall_damage: true

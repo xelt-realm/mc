@@ -1,0 +1,29 @@
+display_name: "<dark_blue>NightOwl"
+description:
+  - "<gray>Deal more damage at night time."
+max_level: 3
+applicable_items:
+  - SWORDS
+  - AXES
+trigger: ATTACK_ENTITY
+target: ALL_ENTITIES
+enchanting_table:
+  enabled: true
+  weight: 4
+  min_cost: 10
+  max_cost: 25
+
+villager_trades:
+  enabled: true
+  weight: 4
+  base_emerald_cost: 10
+  max_emerald_cost: 22
+actions:
+  night_bonus:
+    type: bonus_damage
+    amount:
+      base: 1.5
+      per_level: 1.0
+    multiplier: false
+    conditions:
+      night_time: true

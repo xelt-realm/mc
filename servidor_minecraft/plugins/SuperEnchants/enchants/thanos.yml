@@ -1,0 +1,27 @@
+display_name: "<dark_purple>Thanos"
+description:
+  - "<gray>Chance to halve your opponent's health."
+max_level: 1
+applicable_items:
+  - SWORDS
+  - AXES
+trigger: ATTACK_ENTITY
+target: ALL_ENTITIES
+chance:
+  scaling: fixed
+  value: 0.05
+cooldown: 10000
+enchanting_table:
+  enabled: true
+  weight: 1
+  min_cost: 25
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 1
+  base_emerald_cost: 28
+  max_emerald_cost: 45
+actions:
+  snap:
+    type: thanos

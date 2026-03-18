@@ -1,0 +1,34 @@
+display_name: "<red>Missile"
+description:
+  - "<gray>Turn your arrows into fireball projectiles."
+max_level: 1
+applicable_items:
+  - BOWS
+trigger: BOW_SHOOT
+target: NONE
+enchanting_table:
+  enabled: true
+  weight: 1
+  min_cost: 25
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 1
+  base_emerald_cost: 28
+  max_emerald_cost: 45
+sound:
+  type: entity.blaze.shoot
+  volume: 0.8
+  pitch: 1.0
+
+particle:
+  type: FLAME
+  count: 8
+  spread: 0.5
+  speed: 0.05
+  location: SELF
+
+actions:
+  fireball:
+    type: fireball_arrow

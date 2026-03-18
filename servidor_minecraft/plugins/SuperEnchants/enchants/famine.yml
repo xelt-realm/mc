@@ -1,0 +1,40 @@
+display_name: "<dark_green>Famine"
+description:
+  - "<gray>Give your opponent hunger."
+max_level: 3
+applicable_items:
+  - SWORDS
+  - AXES
+trigger: ATTACK_ENTITY
+target: PLAYERS
+enchanting_table:
+  enabled: true
+  weight: 4
+  min_cost: 10
+  max_cost: 25
+
+villager_trades:
+  enabled: true
+  weight: 4
+  base_emerald_cost: 10
+  max_emerald_cost: 22
+conflicts:
+  - healthsteal
+particle:
+  type: SMOKE
+  count: 8
+  spread: 0.3
+  speed: 0.05
+  location: TARGET
+actions:
+  hunger:
+    type: potion_effect
+    effect: hunger
+    duration:
+      base: 60
+      per_level: 40
+    amplifier:
+      base: 0
+      per_level: 1
+    particles: true
+    icon: true

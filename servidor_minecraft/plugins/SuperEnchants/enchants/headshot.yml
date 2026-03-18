@@ -1,0 +1,26 @@
+display_name: "<red>Headshot"
+description:
+  - "<gray>Deal extra damage with headshots from a bow."
+max_level: 3
+applicable_items:
+  - BOWS
+trigger: ATTACK_ENTITY
+target: ALL_ENTITIES
+enchanting_table:
+  enabled: true
+  weight: 3
+  min_cost: 15
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 3
+  base_emerald_cost: 15
+  max_emerald_cost: 28
+actions:
+  headshot:
+    type: bonus_damage
+    amount:
+      base: 3.0
+      per_level: 2.0
+    multiplier: false

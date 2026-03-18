@@ -1,0 +1,32 @@
+display_name: "<dark_purple>Confusion"
+description:
+  - "<gray>Make your target dizzy and confused."
+max_level: 2
+applicable_items:
+  - SWORDS
+  - AXES
+trigger: ATTACK_ENTITY
+target: PLAYERS
+enchanting_table:
+  enabled: true
+  weight: 4
+  min_cost: 10
+  max_cost: 25
+
+villager_trades:
+  enabled: true
+  weight: 4
+  base_emerald_cost: 10
+  max_emerald_cost: 22
+actions:
+  nausea:
+    type: potion_effect
+    effect: nausea
+    duration:
+      base: 60
+      per_level: 40
+    amplifier:
+      scaling: fixed
+      value: 0
+    particles: true
+    icon: true

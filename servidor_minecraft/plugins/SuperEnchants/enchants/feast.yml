@@ -1,0 +1,29 @@
+display_name: "<green>Feast"
+description:
+  - "<gray>Chance to regain hunger and take it from your opponent."
+max_level: 3
+applicable_items:
+  - SWORDS
+  - AXES
+trigger: ATTACK_ENTITY
+target: PLAYERS
+chance:
+  base: 0.15
+  per_level: 0.1
+enchanting_table:
+  enabled: true
+  weight: 4
+  min_cost: 10
+  max_cost: 25
+
+villager_trades:
+  enabled: true
+  weight: 4
+  base_emerald_cost: 10
+  max_emerald_cost: 22
+actions:
+  feast:
+    type: feast
+    amount:
+      base: 2
+      per_level: 1

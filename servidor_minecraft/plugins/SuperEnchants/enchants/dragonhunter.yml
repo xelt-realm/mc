@@ -1,0 +1,29 @@
+display_name: "<light_purple>Dragon Hunter"
+description:
+  - "<gray>Deal more damage to ender dragons."
+max_level: 5
+applicable_items:
+  - SWORDS
+trigger: ATTACK_ENTITY
+target: ALL_ENTITIES
+enchanting_table:
+  enabled: true
+  weight: 2
+  min_cost: 20
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 2
+  base_emerald_cost: 22
+  max_emerald_cost: 38
+actions:
+  dragon_bonus:
+    type: bonus_damage
+    amount:
+      base: 5.0
+      per_level: 3.0
+    multiplier: false
+    conditions:
+      target_types:
+        - ENDER_DRAGON

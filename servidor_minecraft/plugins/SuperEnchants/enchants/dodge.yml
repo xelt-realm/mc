@@ -1,0 +1,25 @@
+display_name: "<aqua>Dodge"
+description:
+  - "<gray>Chance to dodge an attack."
+max_level: 3
+applicable_items:
+  - LEGGINGS
+trigger: TAKE_DAMAGE
+target: SELF
+chance:
+  base: 0.05
+  per_level: 0.05
+enchanting_table:
+  enabled: true
+  weight: 3
+  min_cost: 15
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 3
+  base_emerald_cost: 15
+  max_emerald_cost: 28
+actions:
+  dodge:
+    type: cancel_damage

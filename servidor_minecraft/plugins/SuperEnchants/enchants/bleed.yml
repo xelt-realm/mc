@@ -1,0 +1,32 @@
+display_name: "<dark_red>Bleed"
+description:
+  - "<gray>Make your target slowly bleed out."
+max_level: 3
+applicable_items:
+  - SWORDS
+  - AXES
+trigger: ATTACK_ENTITY
+target: ALL_ENTITIES
+enchanting_table:
+  enabled: true
+  weight: 5
+  min_cost: 10
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 5
+  base_emerald_cost: 8
+  max_emerald_cost: 18
+actions:
+  bleed:
+    type: potion_effect
+    effect: wither
+    duration:
+      base: 40
+      per_level: 20
+    amplifier:
+      scaling: fixed
+      value: 0
+    particles: true
+    icon: true

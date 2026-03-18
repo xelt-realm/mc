@@ -1,0 +1,29 @@
+display_name: "<gold>ArrowStorm"
+description:
+  - "<gray>Rain arrows on your opponent."
+max_level: 3
+applicable_items:
+  - BOWS
+trigger: PROJECTILE_HIT
+target: ALL_ENTITIES
+cooldown: 10000
+enchanting_table:
+  enabled: true
+  weight: 2
+  min_cost: 20
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 2
+  base_emerald_cost: 22
+  max_emerald_cost: 38
+actions:
+  rain:
+    type: arrow_rain
+    arrows:
+      base: 5
+      per_level: 3
+    radius:
+      base: 3.0
+      per_level: 1.0

@@ -1,0 +1,28 @@
+display_name: "<aqua>Bait"
+description:
+  - "<gray>Chance to get multiple drops when fishing."
+max_level: 3
+applicable_items:
+  - FISHING_RODS
+trigger: FISHING
+target: NONE
+chance:
+  base: 0.2
+  per_level: 0.1
+enchanting_table:
+  enabled: true
+  weight: 5
+  min_cost: 5
+  max_cost: 20
+
+villager_trades:
+  enabled: true
+  weight: 5
+  base_emerald_cost: 8
+  max_emerald_cost: 18
+actions:
+  bonus:
+    type: bonus_drops
+    multiplier:
+      base: 2.0
+      per_level: 1.0

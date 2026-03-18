@@ -1,0 +1,42 @@
+display_name: "<white>Updraft"
+description:
+  - "<gray>Chance to send your attacker into the air."
+max_level: 3
+applicable_items:
+  - CHESTPLATES
+trigger: TAKE_DAMAGE
+target: ALL_ENTITIES
+chance:
+  base: 0.1
+  per_level: 0.05
+enchanting_table:
+  enabled: true
+  weight: 3
+  min_cost: 15
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 3
+  base_emerald_cost: 15
+  max_emerald_cost: 28
+sound:
+  type: entity.ghast.shoot
+  volume: 0.5
+  pitch: 1.3
+
+particle:
+  type: CLOUD
+  count: 10
+  spread: 0.5
+  speed: 0.1
+  location: SELF
+
+actions:
+  launch:
+    type: velocity
+    direction: "UP"
+    power:
+      base: 0.8
+      per_level: 0.3
+    apply_to: "TARGET"

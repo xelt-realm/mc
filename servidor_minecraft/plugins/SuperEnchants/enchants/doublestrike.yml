@@ -1,0 +1,30 @@
+display_name: "<red>Doublestrike"
+description:
+  - "<gray>Chance to deal double damage."
+max_level: 3
+applicable_items:
+  - SWORDS
+  - AXES
+trigger: ATTACK_ENTITY
+target: ALL_ENTITIES
+chance:
+  base: 0.1
+  per_level: 0.05
+enchanting_table:
+  enabled: true
+  weight: 4
+  min_cost: 15
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 4
+  base_emerald_cost: 10
+  max_emerald_cost: 22
+actions:
+  double:
+    type: bonus_damage
+    amount:
+      scaling: fixed
+      value: 1.0
+    multiplier: true

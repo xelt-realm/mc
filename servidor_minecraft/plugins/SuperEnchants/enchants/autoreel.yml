@@ -1,0 +1,22 @@
+display_name: "<aqua>Auto Reel"
+description:
+  - "<gray>Automatically reels in fish when they bite."
+max_level: 1
+applicable_items:
+  - FISHING_RODS
+trigger: FISH_BITE
+target: NONE
+enchanting_table:
+  enabled: true
+  weight: 3
+  min_cost: 15
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 3
+  base_emerald_cost: 15
+  max_emerald_cost: 28
+actions:
+  reel:
+    type: auto_reel

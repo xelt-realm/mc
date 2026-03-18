@@ -1,0 +1,28 @@
+display_name: "<red>Growth"
+description:
+  - "<gray>Gives the player extra health."
+max_level: 5
+applicable_items:
+  - CHESTPLATES
+trigger: PASSIVE
+target: SELF
+enchanting_table:
+  enabled: true
+  weight: 3
+  min_cost: 15
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 3
+  base_emerald_cost: 15
+  max_emerald_cost: 28
+actions:
+  health_boost:
+    type: attribute_modifier
+    attribute: "MAX_HEALTH"
+    amount:
+      base: 2.0
+      per_level: 2.0
+    operation: "ADD_NUMBER"
+    key: "growth"

@@ -1,0 +1,75 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "minecraft:iron_spear": 8,
+      "minecraft:mace": 3
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 7164,
+      "minecraft:walk_one_cm": 4083,
+      "minecraft:leave_game": 1,
+      "minecraft:mob_kills": 3,
+      "minecraft:play_time": 7164,
+      "minecraft:damage_dealt": 896,
+      "minecraft:jump": 49,
+      "minecraft:time_since_death": 7164,
+      "minecraft:drop": 24,
+      "minecraft:sprint_one_cm": 1596,
+      "minecraft:total_world_time": 7164,
+      "minecraft:fly_one_cm": 37615,
+      "minecraft:crouch_one_cm": 57,
+      "minecraft:sneak_time": 143,
+      "minecraft:player_kills": 1
+    },
+    "minecraft:dropped": {
+      "minecraft:music_disc_cat": 1,
+      "minecraft:rotten_flesh": 1,
+      "minecraft:potato": 44,
+      "minecraft:cobblestone": 3,
+      "minecraft:pointed_dripstone": 17,
+      "minecraft:spectral_arrow": 64,
+      "minecraft:gravel": 40,
+      "minecraft:beef": 15,
+      "minecraft:potion": 3,
+      "minecraft:white_wool": 4,
+      "minecraft:iron_hoe": 1,
+      "minecraft:raw_copper": 138,
+      "minecraft:iron_horse_armor": 1,
+      "minecraft:iron_spear": 1,
+      "minecraft:lapis_lazuli": 12,
+      "minecraft:chest": 1,
+      "minecraft:bread": 44,
+      "minecraft:diamond_hoe": 1,
+      "minecraft:crossbow": 1,
+      "minecraft:tipped_arrow": 64
+    },
+    "minecraft:killed": {
+      "minecraft:zombie": 1,
+      "minecraft:horse": 1,
+      "minecraft:iron_golem": 1
+    },
+    "minecraft:picked_up": {
+      "minecraft:tipped_arrow": 64,
+      "minecraft:cobblestone": 3,
+      "minecraft:white_wool": 4,
+      "minecraft:iron_spear": 1,
+      "minecraft:potion": 3,
+      "minecraft:gravel": 40,
+      "minecraft:spectral_arrow": 64,
+      "minecraft:raw_copper": 138,
+      "minecraft:bread": 44,
+      "minecraft:beef": 15,
+      "minecraft:rotten_flesh": 1,
+      "minecraft:pointed_dripstone": 17,
+      "minecraft:diamond_hoe": 1,
+      "minecraft:crossbow": 1,
+      "minecraft:music_disc_cat": 1,
+      "minecraft:potato": 44,
+      "minecraft:iron_horse_armor": 1,
+      "minecraft:lapis_lazuli": 12,
+      "minecraft:chest": 1,
+      "minecraft:iron_hoe": 1
+    }
+  },
+  "DataVersion": 4671
+}

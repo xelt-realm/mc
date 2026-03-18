@@ -1,0 +1,25 @@
+display_name: "<aqua>Deflecting"
+description:
+  - "<gray>Chance of arrows bouncing off your armor."
+max_level: 3
+applicable_items:
+  - CHESTPLATES
+trigger: TAKE_DAMAGE
+target: SELF
+chance:
+  base: 0.1
+  per_level: 0.05
+enchanting_table:
+  enabled: true
+  weight: 3
+  min_cost: 15
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 3
+  base_emerald_cost: 15
+  max_emerald_cost: 28
+actions:
+  deflect:
+    type: deflect

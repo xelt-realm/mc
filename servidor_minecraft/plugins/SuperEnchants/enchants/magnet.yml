@@ -1,0 +1,27 @@
+display_name: "<gray>Magnet"
+description:
+  - "<gray>Pulls nearby items towards you."
+max_level: 3
+applicable_items:
+  - PICKAXES
+  - SWORDS
+  - AXES
+trigger: PASSIVE
+target: SELF
+enchanting_table:
+  enabled: true
+  weight: 4
+  min_cost: 10
+  max_cost: 25
+
+villager_trades:
+  enabled: true
+  weight: 4
+  base_emerald_cost: 10
+  max_emerald_cost: 22
+actions:
+  pull:
+    type: magnet
+    radius:
+      base: 5.0
+      per_level: 2.0

@@ -1,0 +1,67 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 718,
+      "minecraft:walk_one_cm": 27348,
+      "minecraft:leave_game": 1,
+      "minecraft:damage_taken": 2624,
+      "minecraft:play_time": 11379,
+      "minecraft:damage_dealt": 631,
+      "minecraft:jump": 388,
+      "minecraft:time_since_death": 708,
+      "minecraft:damage_dealt_absorbed": 145,
+      "minecraft:sprint_one_cm": 42662,
+      "minecraft:fall_one_cm": 11248,
+      "minecraft:total_world_time": 11379,
+      "minecraft:fly_one_cm": 73175,
+      "minecraft:crouch_one_cm": 219,
+      "minecraft:sneak_time": 204,
+      "minecraft:climb_one_cm": 266,
+      "minecraft:deaths": 9,
+      "minecraft:player_kills": 1
+    },
+    "minecraft:picked_up": {
+      "minecraft:dirt": 17,
+      "minecraft:trident": 1,
+      "minecraft:torch": 3,
+      "minecraft:bread": 64,
+      "minecraft:coal": 128,
+      "minecraft:wheat_seeds": 11,
+      "minecraft:shield": 1,
+      "minecraft:iron_horse_armor": 1,
+      "minecraft:lapis_lazuli": 64,
+      "minecraft:emerald": 128,
+      "minecraft:golden_apple": 64,
+      "minecraft:white_shulker_box": 3,
+      "minecraft:quartz": 64,
+      "minecraft:tipped_arrow": 192,
+      "minecraft:light_gray_shulker_box": 1,
+      "minecraft:iron_spear": 1,
+      "minecraft:potion": 4,
+      "minecraft:bow": 1,
+      "minecraft:spectral_arrow": 64,
+      "minecraft:arrow": 64,
+      "minecraft:raw_copper": 64,
+      "minecraft:raw_iron": 64,
+      "minecraft:crossbow": 1,
+      "minecraft:raw_gold": 64,
+      "minecraft:firework_rocket": 64,
+      "minecraft:golden_carrot": 64
+    },
+    "minecraft:killed_by": {
+      "minecraft:skeleton": 1,
+      "minecraft:player": 6,
+      "minecraft:creeper": 1,
+      "minecraft:zombie": 1
+    },
+    "minecraft:used": {
+      "minecraft:trident": 1,
+      "minecraft:dirt": 7
+    },
+    "minecraft:mined": {
+      "minecraft:short_grass": 47,
+      "minecraft:fern": 20
+    }
+  },
+  "DataVersion": 4671
+}

@@ -1,0 +1,26 @@
+display_name: "<yellow>Predator"
+description:
+  - "<gray>Make entities you hit glow for a few seconds."
+max_level: 3
+applicable_items:
+  - SWORDS
+  - AXES
+trigger: ATTACK_ENTITY
+target: ALL_ENTITIES
+enchanting_table:
+  enabled: true
+  weight: 5
+  min_cost: 8
+  max_cost: 25
+
+villager_trades:
+  enabled: true
+  weight: 5
+  base_emerald_cost: 8
+  max_emerald_cost: 18
+actions:
+  glow:
+    type: glow
+    duration:
+      base: 40
+      per_level: 20

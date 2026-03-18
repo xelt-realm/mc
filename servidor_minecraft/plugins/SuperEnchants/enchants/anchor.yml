@@ -1,0 +1,28 @@
+display_name: "<gray>Anchor"
+description:
+  - "<gray>Increases knockback resistance."
+max_level: 3
+applicable_items:
+  - LEGGINGS
+trigger: PASSIVE
+target: SELF
+enchanting_table:
+  enabled: true
+  weight: 4
+  min_cost: 10
+  max_cost: 25
+
+villager_trades:
+  enabled: true
+  weight: 4
+  base_emerald_cost: 10
+  max_emerald_cost: 22
+actions:
+  resist:
+    type: attribute_modifier
+    attribute: "KNOCKBACK_RESISTANCE"
+    amount:
+      base: 0.25
+      per_level: 0.25
+    operation: "ADD_NUMBER"
+    key: "anchor"

@@ -1,0 +1,34 @@
+display_name: "<gold>Blindness"
+description:
+  - "<gray>Blinds your target on hit."
+max_level: 3
+applicable_items:
+  - SWORDS
+  - AXES
+trigger: ATTACK_ENTITY
+target: PLAYERS
+
+enchanting_table:
+  enabled: true
+  weight: 5
+  min_cost: 10
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 5
+  base_emerald_cost: 8
+  max_emerald_cost: 18
+
+actions:
+  blind:
+    type: potion_effect
+    effect: blindness
+    duration:
+      base: 20
+      per_level: 40
+    amplifier:
+      scaling: fixed
+      value: 0
+    particles: true
+    icon: true

@@ -1,0 +1,28 @@
+display_name: "<aqua>Speed"
+description:
+  - "<gray>Increases player speed."
+max_level: 3
+applicable_items:
+  - BOOTS
+trigger: PASSIVE
+target: SELF
+enchanting_table:
+  enabled: true
+  weight: 4
+  min_cost: 10
+  max_cost: 25
+
+villager_trades:
+  enabled: true
+  weight: 4
+  base_emerald_cost: 10
+  max_emerald_cost: 22
+actions:
+  speed_boost:
+    type: attribute_modifier
+    attribute: "MOVEMENT_SPEED"
+    amount:
+      base: 0.02
+      per_level: 0.01
+    operation: "ADD_NUMBER"
+    key: "speed"

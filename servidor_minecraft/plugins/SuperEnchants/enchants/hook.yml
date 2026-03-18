@@ -1,0 +1,25 @@
+display_name: "<gray>Hook"
+description:
+  - "<gray>When reeling in, make an entity come flying at you."
+max_level: 3
+applicable_items:
+  - FISHING_RODS
+trigger: FISHING
+target: ALL_ENTITIES
+enchanting_table:
+  enabled: true
+  weight: 3
+  min_cost: 15
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 3
+  base_emerald_cost: 15
+  max_emerald_cost: 28
+actions:
+  pull:
+    type: hook
+    power:
+      base: 1.0
+      per_level: 0.5

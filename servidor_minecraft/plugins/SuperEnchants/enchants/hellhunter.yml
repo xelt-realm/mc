@@ -1,0 +1,29 @@
+display_name: "<red>Hell Hunter"
+description:
+  - "<gray>Deal more damage to mobs in the nether."
+max_level: 3
+applicable_items:
+  - SWORDS
+  - AXES
+trigger: ATTACK_ENTITY
+target: ALL_ENTITIES
+enchanting_table:
+  enabled: true
+  weight: 3
+  min_cost: 15
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 3
+  base_emerald_cost: 15
+  max_emerald_cost: 28
+actions:
+  nether_bonus:
+    type: bonus_damage
+    amount:
+      base: 2.0
+      per_level: 1.5
+    multiplier: false
+    conditions:
+      dimension: "THE_NETHER"

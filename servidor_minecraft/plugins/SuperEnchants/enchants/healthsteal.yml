@@ -1,0 +1,32 @@
+display_name: "<dark_red>Healthsteal"
+description:
+  - "<gray>Steal health from your target on hit."
+max_level: 3
+applicable_items:
+  - SWORDS
+  - AXES
+trigger: ATTACK_ENTITY
+target: ALL_ENTITIES
+enchanting_table:
+  enabled: true
+  weight: 4
+  min_cost: 15
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 4
+  base_emerald_cost: 10
+  max_emerald_cost: 22
+conflicts:
+  - famine
+sound:
+  type: entity.player.hurt
+  volume: 0.5
+  pitch: 1.2
+actions:
+  steal:
+    type: healthsteal
+    amount:
+      base: 1.0
+      per_level: 0.5

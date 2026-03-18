@@ -1,0 +1,37 @@
+display_name: "<green>Timber"
+description:
+  - "<gray>Instantly break all logs of a tree."
+max_level: 1
+applicable_items:
+  - AXES
+trigger: BLOCK_BREAK
+target: NONE
+enchanting_table:
+  enabled: true
+  weight: 4
+  min_cost: 10
+  max_cost: 25
+
+villager_trades:
+  enabled: true
+  weight: 4
+  base_emerald_cost: 10
+  max_emerald_cost: 22
+sound:
+  type: block.wood.break
+  volume: 0.6
+  pitch: 0.9
+
+particle:
+  type: BLOCK_DUST
+  count: 5
+  spread: 0.5
+  speed: 0.1
+  location: BLOCK
+
+actions:
+  chop:
+    type: timber
+    max_blocks:
+      scaling: fixed
+      value: 64

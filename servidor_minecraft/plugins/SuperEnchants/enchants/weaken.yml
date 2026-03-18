@@ -1,0 +1,35 @@
+display_name: "<gray>Weaken"
+description:
+  - "<gray>Chance of giving your opponent weakness."
+max_level: 3
+applicable_items:
+  - SWORDS
+  - AXES
+trigger: ATTACK_ENTITY
+target: ALL_ENTITIES
+chance:
+  base: 0.15
+  per_level: 0.1
+enchanting_table:
+  enabled: true
+  weight: 4
+  min_cost: 10
+  max_cost: 25
+
+villager_trades:
+  enabled: true
+  weight: 4
+  base_emerald_cost: 10
+  max_emerald_cost: 22
+actions:
+  weakness:
+    type: potion_effect
+    effect: weakness
+    duration:
+      base: 40
+      per_level: 20
+    amplifier:
+      base: 0
+      per_level: 1
+    particles: true
+    icon: true

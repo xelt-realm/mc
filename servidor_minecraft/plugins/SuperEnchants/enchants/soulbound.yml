@@ -1,0 +1,30 @@
+display_name: "<light_purple>Soulbound"
+description:
+  - "<gray>Keep this item on death."
+max_level: 1
+applicable_items:
+  - SWORDS
+  - AXES
+  - PICKAXES
+  - SHOVELS
+  - HOES
+  - BOWS
+  - FISHING_RODS
+  - HELMETS
+  - CHESTPLATES
+  - LEGGINGS
+  - BOOTS
+trigger: DEATH
+target: NONE
+enchanting_table:
+  enabled: true
+  weight: 1
+  min_cost: 25
+  max_cost: 40
+
+villager_trades:
+  enabled: true
+  weight: 1
+  base_emerald_cost: 28
+  max_emerald_cost: 45
+actions: {}

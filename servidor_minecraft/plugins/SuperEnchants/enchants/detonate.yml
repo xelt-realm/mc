@@ -1,0 +1,39 @@
+display_name: "<red>Detonate"
+description:
+  - "<gray>Makes your arrows explode on impact."
+max_level: 3
+applicable_items:
+  - BOWS
+trigger: PROJECTILE_HIT
+target: NONE
+enchanting_table:
+  enabled: true
+  weight: 2
+  min_cost: 20
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 2
+  base_emerald_cost: 22
+  max_emerald_cost: 38
+sound:
+  type: entity.generic.explode
+  volume: 0.9
+  pitch: 1.1
+
+particle:
+  type: EXPLOSION
+  count: 2
+  spread: 0.5
+  speed: 0.1
+  location: TARGET
+
+actions:
+  explode:
+    type: explode_projectile
+    power:
+      base: 1.0
+      per_level: 0.5
+    fire: false
+    break_blocks: false

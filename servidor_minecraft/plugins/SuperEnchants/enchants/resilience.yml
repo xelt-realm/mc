@@ -1,0 +1,27 @@
+display_name: "<gold>Resilience"
+description:
+  - "<gray>Chance of not taking damage when at or below 2 hearts."
+max_level: 3
+applicable_items:
+  - CHESTPLATES
+trigger: TAKE_DAMAGE
+target: SELF
+chance:
+  base: 0.1
+  per_level: 0.1
+enchanting_table:
+  enabled: true
+  weight: 2
+  min_cost: 20
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 2
+  base_emerald_cost: 22
+  max_emerald_cost: 38
+actions:
+  resist:
+    type: cancel_damage
+    conditions:
+      low_health: 4.0

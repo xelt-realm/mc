@@ -1,0 +1,31 @@
+display_name: "<dark_red>Vampiric"
+description:
+  - "<gray>Steal health from entities hit by your arrows."
+max_level: 3
+applicable_items:
+  - BOWS
+trigger: PROJECTILE_HIT
+target: ALL_ENTITIES
+enchanting_table:
+  enabled: true
+  weight: 3
+  min_cost: 15
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 3
+  base_emerald_cost: 12
+  max_emerald_cost: 25
+conflicts:
+  - famine
+sound:
+  type: entity.player.hurt
+  volume: 0.5
+  pitch: 1.2
+actions:
+  steal:
+    type: healthsteal
+    amount:
+      base: 1.0
+      per_level: 0.5

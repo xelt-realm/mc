@@ -1,0 +1,31 @@
+display_name: "<gold>Overload"
+description:
+  - "<gray>Grants absorption hearts passively."
+max_level: 3
+applicable_items:
+  - HELMETS
+trigger: PASSIVE
+target: SELF
+enchanting_table:
+  enabled: true
+  weight: 3
+  min_cost: 15
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 3
+  base_emerald_cost: 15
+  max_emerald_cost: 28
+actions:
+  absorb:
+    type: potion_effect
+    effect: absorption
+    duration:
+      scaling: fixed
+      value: 400
+    amplifier:
+      base: 0
+      per_level: 1
+    particles: false
+    icon: true

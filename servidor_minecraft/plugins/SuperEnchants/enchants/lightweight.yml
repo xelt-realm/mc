@@ -1,0 +1,38 @@
+display_name: "<white>Lightweight"
+description:
+  - "<gray>Move faster but have less health."
+max_level: 3
+applicable_items:
+  - LEGGINGS
+trigger: PASSIVE
+target: SELF
+enchanting_table:
+  enabled: true
+  weight: 3
+  min_cost: 15
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 3
+  base_emerald_cost: 15
+  max_emerald_cost: 28
+conflicts:
+  - heavy
+actions:
+  speed_boost:
+    type: attribute_modifier
+    attribute: "MOVEMENT_SPEED"
+    amount:
+      base: 0.02
+      per_level: 0.01
+    operation: "ADD_NUMBER"
+    key: "lightweight_speed"
+  health_loss:
+    type: attribute_modifier
+    attribute: "MAX_HEALTH"
+    amount:
+      base: -2.0
+      per_level: -2.0
+    operation: "ADD_NUMBER"
+    key: "lightweight_health"

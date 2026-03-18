@@ -1,0 +1,29 @@
+display_name: "<red>Dismantle"
+description:
+  - "<gray>Chance to damage your opponent's armor."
+max_level: 3
+applicable_items:
+  - SWORDS
+  - AXES
+trigger: ATTACK_ENTITY
+target: PLAYERS
+chance:
+  base: 0.1
+  per_level: 0.05
+enchanting_table:
+  enabled: true
+  weight: 3
+  min_cost: 15
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 3
+  base_emerald_cost: 15
+  max_emerald_cost: 28
+actions:
+  break:
+    type: break_armor
+    damage:
+      base: 30
+      per_level: 20

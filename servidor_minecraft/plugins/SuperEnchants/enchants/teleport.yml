@@ -1,0 +1,38 @@
+display_name: "<dark_purple>Teleport"
+description:
+  - "<gray>Right click with a sword to teleport forward."
+max_level: 3
+applicable_items:
+  - SWORDS
+trigger: RIGHT_CLICK
+target: SELF
+cooldown: 5000
+enchanting_table:
+  enabled: true
+  weight: 2
+  min_cost: 20
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 2
+  base_emerald_cost: 22
+  max_emerald_cost: 38
+sound:
+  type: entity.enderman.teleport
+  volume: 1.0
+  pitch: 1.0
+
+particle:
+  type: PORTAL
+  count: 20
+  spread: 0.5
+  speed: 0.1
+  location: SELF
+
+actions:
+  tp:
+    type: teleport
+    range:
+      base: 10.0
+      per_level: 5.0

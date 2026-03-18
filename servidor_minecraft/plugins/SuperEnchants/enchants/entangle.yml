@@ -1,0 +1,31 @@
+display_name: "<green>Entangle"
+description:
+  - "<gray>Heavily slow targets hit by your arrows."
+max_level: 3
+applicable_items:
+  - BOWS
+trigger: PROJECTILE_HIT
+target: ALL_ENTITIES
+enchanting_table:
+  enabled: true
+  weight: 3
+  min_cost: 15
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 3
+  base_emerald_cost: 15
+  max_emerald_cost: 28
+actions:
+  slow:
+    type: potion_effect
+    effect: slowness
+    duration:
+      base: 60
+      per_level: 20
+    amplifier:
+      base: 1
+      per_level: 1
+    particles: true
+    icon: true

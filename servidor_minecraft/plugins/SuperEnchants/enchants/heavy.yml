@@ -1,0 +1,38 @@
+display_name: "<dark_gray>Heavy"
+description:
+  - "<gray>Gain more health but move slower."
+max_level: 3
+applicable_items:
+  - CHESTPLATES
+trigger: PASSIVE
+target: SELF
+enchanting_table:
+  enabled: true
+  weight: 3
+  min_cost: 15
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 3
+  base_emerald_cost: 15
+  max_emerald_cost: 28
+conflicts:
+  - lightweight
+actions:
+  health_boost:
+    type: attribute_modifier
+    attribute: "MAX_HEALTH"
+    amount:
+      base: 4.0
+      per_level: 2.0
+    operation: "ADD_NUMBER"
+    key: "heavy_health"
+  slow:
+    type: attribute_modifier
+    attribute: "MOVEMENT_SPEED"
+    amount:
+      base: -0.02
+      per_level: -0.01
+    operation: "ADD_NUMBER"
+    key: "heavy_speed"

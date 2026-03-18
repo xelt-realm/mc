@@ -1,0 +1,26 @@
+display_name: "<green>Consume"
+description:
+  - "<gray>Every few seconds gain half a hunger bar."
+max_level: 3
+applicable_items:
+  - HELMETS
+trigger: PASSIVE
+target: SELF
+cooldown: 5000
+enchanting_table:
+  enabled: true
+  weight: 4
+  min_cost: 10
+  max_cost: 25
+
+villager_trades:
+  enabled: true
+  weight: 4
+  base_emerald_cost: 10
+  max_emerald_cost: 22
+actions:
+  feed:
+    type: consume
+    amount:
+      base: 1
+      per_level: 0

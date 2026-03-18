@@ -1,0 +1,29 @@
+display_name: "<white>Ascend"
+description:
+  - "<gray>Ascend to the sky when you right click."
+max_level: 3
+applicable_items:
+  - BOOTS
+trigger: RIGHT_CLICK
+target: SELF
+cooldown: 5000
+enchanting_table:
+  enabled: true
+  weight: 3
+  min_cost: 15
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 3
+  base_emerald_cost: 15
+  max_emerald_cost: 28
+actions:
+  launch:
+    type: velocity
+    direction: "UP"
+    power:
+      base: 1.0
+      per_level: 0.5
+    apply_to: "SELF"
+    no_fall_damage: true

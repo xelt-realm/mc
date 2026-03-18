@@ -1,0 +1,32 @@
+display_name: "<light_purple>Spirit Link"
+description:
+  - "<gray>Gain absorption hearts on kill."
+max_level: 3
+applicable_items:
+  - SWORDS
+  - AXES
+trigger: KILL_ENTITY
+target: SELF
+enchanting_table:
+  enabled: true
+  weight: 3
+  min_cost: 15
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 3
+  base_emerald_cost: 15
+  max_emerald_cost: 28
+actions:
+  absorb:
+    type: potion_effect
+    effect: absorption
+    duration:
+      base: 100
+      per_level: 60
+    amplifier:
+      base: 0
+      per_level: 1
+    particles: true
+    icon: true

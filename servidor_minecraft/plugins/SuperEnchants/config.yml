@@ -1,0 +1,33 @@
+# SuperEnchants Configuration
+
+# Prefix used in plugin messages (MiniMessage format)
+prefix: "<gradient:#FF6B6B:#FFD93D><bold>SuperEnchants</bold></gradient> <dark_gray>»</dark_gray> "
+
+# Update checker settings
+update-checker:
+  enabled: true
+
+# How often passive enchantments tick (in server ticks, 20 = 1 second)
+passive-tick-interval: 20
+
+# Enable debug logging to console
+debug: false
+
+# Region protection - fires simulated BlockBreakEvents to check claim plugins
+# Works with WorldGuard, GriefPrevention, Towny, Lands, Residence, etc.
+region-protection:
+  enabled: true
+
+# Custom enchant books appearing in librarian villager trades
+villager-trades:
+  enabled: true
+  chance: 0.8
+  # Default emerald cost range (can be overridden per-enchant via villager_trades section in enchant YAML files)
+  base-emerald-cost: 10
+  max-emerald-cost: 32
+
+# Custom enchant books appearing in dungeon/structure chest loot
+loot-generation:
+  enabled: true
+  # Default chance per loot event (per-enchant weight/eligibility controlled via loot_generation section in enchant YAML files
+  chance: 0.45

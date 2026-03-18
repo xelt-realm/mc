@@ -1,0 +1,23 @@
+display_name: "<gold>Lifeline"
+description:
+  - "<gray>Survive a killing blow with half a heart."
+max_level: 1
+applicable_items:
+  - CHESTPLATES
+trigger: TAKE_DAMAGE
+target: SELF
+cooldown: 60000
+enchanting_table:
+  enabled: true
+  weight: 1
+  min_cost: 25
+  max_cost: 40
+
+villager_trades:
+  enabled: true
+  weight: 1
+  base_emerald_cost: 28
+  max_emerald_cost: 45
+actions:
+  save:
+    type: lifeline

@@ -1,0 +1,29 @@
+display_name: "<dark_red>Adrenaline"
+description:
+  - "<gray>Deal more damage when you're at or below 2 hearts."
+max_level: 3
+applicable_items:
+  - SWORDS
+  - AXES
+trigger: ATTACK_ENTITY
+target: ALL_ENTITIES
+enchanting_table:
+  enabled: true
+  weight: 3
+  min_cost: 15
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 3
+  base_emerald_cost: 15
+  max_emerald_cost: 28
+actions:
+  adrenaline:
+    type: bonus_damage
+    amount:
+      base: 3.0
+      per_level: 2.0
+    multiplier: false
+    conditions:
+      low_health: 4.0

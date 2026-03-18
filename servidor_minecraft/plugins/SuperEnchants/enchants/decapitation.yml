@@ -1,0 +1,26 @@
+display_name: "<dark_red>Decapitation"
+description:
+  - "<gray>Small chance for players to drop heads on death."
+max_level: 3
+applicable_items:
+  - SWORDS
+  - AXES
+trigger: KILL_ENTITY
+target: PLAYERS
+chance:
+  base: 0.05
+  per_level: 0.05
+enchanting_table:
+  enabled: true
+  weight: 2
+  min_cost: 20
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 2
+  base_emerald_cost: 22
+  max_emerald_cost: 38
+actions:
+  head:
+    type: drop_head

@@ -1,0 +1,29 @@
+display_name: "<red>Slaughter"
+description:
+  - "<gray>Deal more damage to passive mobs."
+max_level: 5
+applicable_items:
+  - SWORDS
+  - AXES
+trigger: ATTACK_ENTITY
+target: MOBS
+enchanting_table:
+  enabled: true
+  weight: 4
+  min_cost: 5
+  max_cost: 20
+
+villager_trades:
+  enabled: true
+  weight: 4
+  base_emerald_cost: 10
+  max_emerald_cost: 22
+actions:
+  passive_bonus:
+    type: bonus_damage
+    amount:
+      base: 2.0
+      per_level: 1.0
+    multiplier: false
+    conditions:
+      passive_mobs: true

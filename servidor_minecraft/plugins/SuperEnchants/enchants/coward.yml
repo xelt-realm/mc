@@ -1,0 +1,34 @@
+display_name: "<yellow>Coward"
+description:
+  - "<gray>Chance of gaining speed upon taking damage."
+max_level: 3
+applicable_items:
+  - BOOTS
+trigger: TAKE_DAMAGE
+target: SELF
+chance:
+  base: 0.2
+  per_level: 0.1
+enchanting_table:
+  enabled: true
+  weight: 4
+  min_cost: 8
+  max_cost: 25
+
+villager_trades:
+  enabled: true
+  weight: 4
+  base_emerald_cost: 10
+  max_emerald_cost: 22
+actions:
+  flee:
+    type: potion_effect
+    effect: speed
+    duration:
+      base: 40
+      per_level: 20
+    amplifier:
+      base: 0
+      per_level: 1
+    particles: true
+    icon: true

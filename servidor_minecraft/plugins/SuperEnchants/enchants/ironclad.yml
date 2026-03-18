@@ -1,0 +1,28 @@
+display_name: "<white>Ironclad"
+description:
+  - "<gray>Increases armor toughness."
+max_level: 3
+applicable_items:
+  - ARMOR
+trigger: PASSIVE
+target: SELF
+enchanting_table:
+  enabled: true
+  weight: 4
+  min_cost: 10
+  max_cost: 25
+
+villager_trades:
+  enabled: true
+  weight: 4
+  base_emerald_cost: 10
+  max_emerald_cost: 22
+actions:
+  toughness:
+    type: attribute_modifier
+    attribute: "ARMOR_TOUGHNESS"
+    amount:
+      base: 2.0
+      per_level: 1.0
+    operation: "ADD_NUMBER"
+    key: "ironclad"

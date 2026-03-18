@@ -1,0 +1,20 @@
+display_name: "<dark_gray>Stealth"
+description:
+  - "<gray>Hostile mobs ignore you while sneaking."
+max_level: 1
+applicable_items:
+  - BOOTS
+trigger: PASSIVE
+target: SELF
+enchanting_table:
+  enabled: true
+  weight: 1
+  min_cost: 25
+  max_cost: 35
+
+villager_trades:
+  enabled: true
+  weight: 1
+  base_emerald_cost: 28
+  max_emerald_cost: 45
+actions: {}

@@ -1,0 +1,25 @@
+display_name: "<red>Lavawalker"
+description:
+  - "<gray>Allows you to walk on lava, like frostwalker."
+max_level: 3
+applicable_items:
+  - BOOTS
+trigger: PASSIVE
+target: SELF
+enchanting_table:
+  enabled: true
+  weight: 2
+  min_cost: 20
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 2
+  base_emerald_cost: 22
+  max_emerald_cost: 38
+actions:
+  walk:
+    type: lava_walker
+    radius:
+      base: 2
+      per_level: 1

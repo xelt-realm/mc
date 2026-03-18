@@ -1,0 +1,40 @@
+display_name: "<aqua>Dash"
+description:
+  - "<gray>Quickly dash away from your opponent."
+max_level: 3
+applicable_items:
+  - SWORDS
+trigger: RIGHT_CLICK
+target: SELF
+cooldown: 3000
+enchanting_table:
+  enabled: true
+  weight: 4
+  min_cost: 10
+  max_cost: 25
+
+villager_trades:
+  enabled: true
+  weight: 4
+  base_emerald_cost: 10
+  max_emerald_cost: 22
+sound:
+  type: entity.player.attack.sweep
+  volume: 0.6
+  pitch: 1.2
+
+particle:
+  type: SWEEP_ATTACK
+  count: 5
+  spread: 0.5
+  speed: 0.1
+  location: SELF
+
+actions:
+  dash:
+    type: velocity
+    direction: "FORWARD"
+    power:
+      base: 1.0
+      per_level: 0.5
+    apply_to: "SELF"

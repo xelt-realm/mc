@@ -1,0 +1,30 @@
+display_name: "<green>Harvester"
+description:
+  - "<gray>Chance to gain more drops from crops."
+max_level: 3
+applicable_items:
+  - HOES
+trigger: BLOCK_BREAK
+target: NONE
+chance:
+  base: 0.2
+  per_level: 0.1
+enchanting_table:
+  enabled: true
+  weight: 4
+  min_cost: 8
+  max_cost: 25
+
+villager_trades:
+  enabled: true
+  weight: 4
+  base_emerald_cost: 10
+  max_emerald_cost: 22
+actions:
+  bonus:
+    type: bonus_drops
+    crops_only: true
+    exclude_seeds: true
+    multiplier:
+      base: 2.0
+      per_level: 1.0

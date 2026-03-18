@@ -1,0 +1,28 @@
+display_name: "<dark_red>Backstabber"
+description:
+  - "<gray>Deal more damage on the first hit when out of combat."
+max_level: 3
+applicable_items:
+  - SWORDS
+  - AXES
+trigger: ATTACK_ENTITY
+target: ALL_ENTITIES
+cooldown: 10000
+enchanting_table:
+  enabled: true
+  weight: 4
+  min_cost: 12
+  max_cost: 28
+
+villager_trades:
+  enabled: true
+  weight: 4
+  base_emerald_cost: 10
+  max_emerald_cost: 22
+actions:
+  backstab:
+    type: bonus_damage
+    amount:
+      base: 3.0
+      per_level: 1.5
+    multiplier: false

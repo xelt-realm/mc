@@ -1,0 +1,41 @@
+display_name: "<dark_purple>Gravity"
+description:
+  - "<gray>Pull players towards you with a right click."
+max_level: 3
+applicable_items:
+  - SWORDS
+trigger: RIGHT_CLICK
+target: SELF
+cooldown: 5000
+enchanting_table:
+  enabled: true
+  weight: 3
+  min_cost: 15
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 3
+  base_emerald_cost: 15
+  max_emerald_cost: 28
+sound:
+  type: entity.witch.ambient
+  volume: 0.6
+  pitch: 0.8
+
+particle:
+  type: WITCH
+  count: 8
+  spread: 0.5
+  speed: 0.1
+  location: TARGET
+
+actions:
+  pull:
+    type: gravity
+    radius:
+      base: 5.0
+      per_level: 2.0
+    power:
+      base: 0.5
+      per_level: 0.2

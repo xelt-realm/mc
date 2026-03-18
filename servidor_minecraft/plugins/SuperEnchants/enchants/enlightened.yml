@@ -1,0 +1,25 @@
+display_name: "<yellow>Enlightened"
+description:
+  - "<gray>Gain extra XP from breaking ores."
+max_level: 5
+applicable_items:
+  - PICKAXES
+trigger: BLOCK_BREAK
+target: NONE
+enchanting_table:
+  enabled: true
+  weight: 5
+  min_cost: 5
+  max_cost: 25
+
+villager_trades:
+  enabled: true
+  weight: 5
+  base_emerald_cost: 8
+  max_emerald_cost: 18
+actions:
+  xp:
+    type: xp_bonus
+    multiplier:
+      base: 1.5
+      per_level: 0.5

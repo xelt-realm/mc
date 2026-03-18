@@ -1,0 +1,26 @@
+display_name: "<yellow>Archer"
+description:
+  - "<gray>Deal more damage with your arrows."
+max_level: 5
+applicable_items:
+  - BOWS
+trigger: ATTACK_ENTITY
+target: ALL_ENTITIES
+enchanting_table:
+  enabled: true
+  weight: 5
+  min_cost: 8
+  max_cost: 25
+
+villager_trades:
+  enabled: true
+  weight: 5
+  base_emerald_cost: 8
+  max_emerald_cost: 18
+actions:
+  arrow_bonus:
+    type: bonus_damage
+    amount:
+      base: 1.0
+      per_level: 0.5
+    multiplier: false

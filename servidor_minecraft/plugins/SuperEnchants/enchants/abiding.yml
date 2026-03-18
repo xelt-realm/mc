@@ -1,0 +1,29 @@
+display_name: "<gold>Abiding"
+description:
+  - "<gray>Makes your item unbreakable."
+max_level: 1
+applicable_items:
+  - TOOLS
+  - ARMOR
+  - SWORDS
+  - BOWS
+  - FISHING_RODS
+  - TRIDENT
+  - SHIELD
+  - MACE
+trigger: PASSIVE
+target: SELF
+enchanting_table:
+  enabled: true
+  weight: 1
+  min_cost: 25
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 1
+  base_emerald_cost: 28
+  max_emerald_cost: 45
+actions:
+  protect:
+    type: unbreakable

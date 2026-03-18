@@ -1,0 +1,27 @@
+display_name: "<red>Martyrdom"
+description:
+  - "<gray>Explode on death, punishing your killer."
+max_level: 3
+applicable_items:
+  - CHESTPLATES
+trigger: DEATH
+target: NONE
+enchanting_table:
+  enabled: true
+  weight: 2
+  min_cost: 20
+  max_cost: 35
+
+villager_trades:
+  enabled: true
+  weight: 2
+  base_emerald_cost: 22
+  max_emerald_cost: 40
+actions:
+  boom:
+    type: explosion
+    power:
+      base: 1.0
+      per_level: 0.5
+    fire: false
+    break_blocks: false

@@ -1,0 +1,25 @@
+display_name: "<dark_purple>EnderAura"
+description:
+  - "<gray>Increases ender pearls dropped by killing endermen."
+max_level: 3
+applicable_items:
+  - SWORDS
+trigger: KILL_ENTITY
+target: SELF
+enchanting_table:
+  enabled: true
+  weight: 3
+  min_cost: 15
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 3
+  base_emerald_cost: 15
+  max_emerald_cost: 28
+actions:
+  drops:
+    type: bonus_drops
+    multiplier:
+      base: 2.0
+      per_level: 1.0

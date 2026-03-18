@@ -1,0 +1,76 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "minecraft:experience_bottle": 342,
+      "minecraft:netherite_sword": 14,
+      "minecraft:respawn_anchor": 6,
+      "minecraft:anvil": 2,
+      "minecraft:enchanted_golden_apple": 27,
+      "minecraft:end_crystal": 56,
+      "minecraft:totem_of_undying": 21,
+      "minecraft:chipped_anvil": 1,
+      "minecraft:ender_pearl": 6,
+      "minecraft:obsidian": 16
+    },
+    "minecraft:killed_by": {
+      "minecraft:player": 2
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 5055,
+      "minecraft:leave_game": 2,
+      "minecraft:mob_kills": 3,
+      "minecraft:damage_taken": 6094,
+      "minecraft:damage_absorbed": 4261,
+      "minecraft:time_since_death": 5046,
+      "minecraft:damage_dealt_absorbed": 1245,
+      "minecraft:open_enderchest": 1,
+      "minecraft:total_world_time": 45214,
+      "minecraft:crouch_one_cm": 225,
+      "minecraft:deaths": 2,
+      "minecraft:player_kills": 8,
+      "minecraft:damage_resisted": 5312,
+      "minecraft:walk_one_cm": 47167,
+      "minecraft:walk_under_water_one_cm": 4270,
+      "minecraft:play_time": 45214,
+      "minecraft:damage_dealt": 647,
+      "minecraft:jump": 140,
+      "minecraft:drop": 68,
+      "minecraft:sprint_one_cm": 14,
+      "minecraft:fall_one_cm": 9083,
+      "minecraft:fly_one_cm": 27750,
+      "minecraft:interact_with_anvil": 8,
+      "minecraft:walk_on_water_one_cm": 7942,
+      "minecraft:sneak_time": 1064
+    },
+    "minecraft:dropped": {
+      "minecraft:totem_of_undying": 43,
+      "minecraft:end_crystal": 131,
+      "minecraft:obsidian": 64,
+      "minecraft:enchanted_book": 13,
+      "minecraft:ender_pearl": 48,
+      "minecraft:experience_bottle": 192
+    },
+    "minecraft:mined": {
+      "minecraft:fire": 9,
+      "minecraft:glowstone": 1
+    },
+    "minecraft:killed": {
+      "minecraft:zombie": 2,
+      "minecraft:bat": 1
+    },
+    "minecraft:picked_up": {
+      "minecraft:enchanted_book": 13,
+      "minecraft:orange_terracotta": 3,
+      "minecraft:diorite": 31,
+      "minecraft:ender_pearl": 48,
+      "minecraft:experience_bottle": 192,
+      "minecraft:glowstone_dust": 3,
+      "minecraft:obsidian": 65,
+      "minecraft:totem_of_undying": 32,
+      "minecraft:gravel": 1,
+      "minecraft:end_crystal": 130,
+      "minecraft:cobbled_deepslate": 53
+    }
+  },
+  "DataVersion": 4671
+}

@@ -1,0 +1,32 @@
+display_name: "<dark_green>Venom"
+description:
+  - "<gray>Poison your enemies on hit."
+max_level: 3
+applicable_items:
+  - SWORDS
+  - AXES
+trigger: ATTACK_ENTITY
+target: ALL_ENTITIES
+enchanting_table:
+  enabled: true
+  weight: 4
+  min_cost: 10
+  max_cost: 25
+
+villager_trades:
+  enabled: true
+  weight: 4
+  base_emerald_cost: 10
+  max_emerald_cost: 22
+actions:
+  poison:
+    type: potion_effect
+    effect: poison
+    duration:
+      base: 40
+      per_level: 20
+    amplifier:
+      scaling: fixed
+      value: 0
+    particles: true
+    icon: true

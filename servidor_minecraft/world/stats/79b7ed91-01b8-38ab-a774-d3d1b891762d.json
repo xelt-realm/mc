@@ -1,0 +1,52 @@
+{
+  "stats": {
+    "minecraft:picked_up": {
+      "minecraft:white_shulker_box": 3,
+      "minecraft:quartz": 64,
+      "minecraft:tipped_arrow": 128,
+      "minecraft:light_gray_shulker_box": 2,
+      "minecraft:trident": 1,
+      "minecraft:potion": 3,
+      "minecraft:iron_spear": 1,
+      "minecraft:spectral_arrow": 64,
+      "minecraft:bow": 1,
+      "minecraft:arrow": 64,
+      "minecraft:raw_copper": 64,
+      "minecraft:bread": 64,
+      "minecraft:raw_iron": 64,
+      "minecraft:crossbow": 1,
+      "minecraft:coal": 64,
+      "minecraft:raw_gold": 64,
+      "minecraft:firework_rocket": 64,
+      "minecraft:shield": 1,
+      "minecraft:iron_horse_armor": 1,
+      "minecraft:lapis_lazuli": 64,
+      "minecraft:emerald": 64,
+      "minecraft:golden_carrot": 64,
+      "minecraft:golden_apple": 64
+    },
+    "minecraft:used": {
+      "minecraft:white_shulker_box": 1,
+      "minecraft:iron_helmet": 1,
+      "minecraft:iron_pickaxe": 1,
+      "minecraft:light_gray_shulker_box": 1
+    },
+    "minecraft:mined": {
+      "minecraft:light_gray_shulker_box": 1,
+      "minecraft:white_shulker_box": 1
+    },
+    "minecraft:custom": {
+      "minecraft:sprint_one_cm": 583,
+      "minecraft:time_since_rest": 2471,
+      "minecraft:walk_one_cm": 3208,
+      "minecraft:total_world_time": 2471,
+      "minecraft:leave_game": 1,
+      "minecraft:fly_one_cm": 1217,
+      "minecraft:play_time": 2471,
+      "minecraft:open_shulker_box": 3,
+      "minecraft:jump": 19,
+      "minecraft:time_since_death": 2471
+    }
+  },
+  "DataVersion": 4671
+}

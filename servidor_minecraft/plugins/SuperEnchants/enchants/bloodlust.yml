@@ -1,0 +1,54 @@
+display_name: "<dark_red>Bloodlust"
+description:
+  - "<gray>Gain strength, regeneration, and speed on killing a player."
+max_level: 3
+applicable_items:
+  - SWORDS
+  - AXES
+trigger: KILL_ENTITY
+target: SELF
+enchanting_table:
+  enabled: true
+  weight: 3
+  min_cost: 15
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 3
+  base_emerald_cost: 15
+  max_emerald_cost: 28
+actions:
+  strength:
+    type: potion_effect
+    effect: strength
+    duration:
+      base: 100
+      per_level: 60
+    amplifier:
+      scaling: fixed
+      value: 0
+    particles: true
+    icon: true
+  regeneration:
+    type: potion_effect
+    effect: regeneration
+    duration:
+      base: 100
+      per_level: 60
+    amplifier:
+      scaling: fixed
+      value: 0
+    particles: true
+    icon: true
+  speed:
+    type: potion_effect
+    effect: speed
+    duration:
+      base: 100
+      per_level: 60
+    amplifier:
+      scaling: fixed
+      value: 0
+    particles: true
+    icon: true

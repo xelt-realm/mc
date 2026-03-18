@@ -1,0 +1,54 @@
+{
+  "stats": {
+    "minecraft:picked_up": {
+      "minecraft:white_shulker_box": 3,
+      "minecraft:quartz": 64,
+      "minecraft:tipped_arrow": 128,
+      "minecraft:light_gray_shulker_box": 1,
+      "minecraft:trident": 1,
+      "minecraft:potion": 3,
+      "minecraft:iron_spear": 1,
+      "minecraft:spectral_arrow": 64,
+      "minecraft:bow": 1,
+      "minecraft:arrow": 64,
+      "minecraft:raw_copper": 48,
+      "minecraft:bread": 65,
+      "minecraft:raw_iron": 64,
+      "minecraft:crossbow": 1,
+      "minecraft:coal": 64,
+      "minecraft:raw_gold": 64,
+      "minecraft:firework_rocket": 64,
+      "minecraft:shield": 1,
+      "minecraft:lapis_lazuli": 64,
+      "minecraft:emerald": 64,
+      "minecraft:golden_carrot": 64,
+      "minecraft:golden_apple": 64
+    },
+    "minecraft:used": {
+      "minecraft:white_shulker_box": 1,
+      "minecraft:bread": 1,
+      "minecraft:golden_carrot": 1
+    },
+    "minecraft:dropped": {
+      "minecraft:bread": 64
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 8189,
+      "minecraft:walk_one_cm": 9569,
+      "minecraft:leave_game": 2,
+      "minecraft:damage_taken": 39,
+      "minecraft:play_time": 8189,
+      "minecraft:open_shulker_box": 8,
+      "minecraft:jump": 120,
+      "minecraft:time_since_death": 8189,
+      "minecraft:drop": 1,
+      "minecraft:sprint_one_cm": 30487,
+      "minecraft:open_chest": 9,
+      "minecraft:fall_one_cm": 1856,
+      "minecraft:total_world_time": 8189,
+      "minecraft:fly_one_cm": 20552,
+      "minecraft:sneak_time": 1
+    }
+  },
+  "DataVersion": 4671
+}

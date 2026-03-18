@@ -1,0 +1,22 @@
+display_name: "<red>Autosmelt"
+description:
+  - "<gray>Automatically smelt ores when mined."
+max_level: 1
+applicable_items:
+  - PICKAXES
+trigger: BLOCK_BREAK
+target: NONE
+enchanting_table:
+  enabled: true
+  weight: 4
+  min_cost: 10
+  max_cost: 25
+
+villager_trades:
+  enabled: true
+  weight: 4
+  base_emerald_cost: 10
+  max_emerald_cost: 22
+actions:
+  smelt:
+    type: autosmelt

@@ -1,0 +1,32 @@
+display_name: "<blue>Fortify"
+description:
+  - "<gray>Gain damage resistance when hit."
+max_level: 3
+applicable_items:
+  - CHESTPLATES
+trigger: TAKE_DAMAGE
+target: SELF
+cooldown: 5000
+enchanting_table:
+  enabled: true
+  weight: 3
+  min_cost: 15
+  max_cost: 30
+
+villager_trades:
+  enabled: true
+  weight: 3
+  base_emerald_cost: 15
+  max_emerald_cost: 28
+actions:
+  resist:
+    type: potion_effect
+    effect: resistance
+    duration:
+      base: 40
+      per_level: 20
+    amplifier:
+      base: 0
+      per_level: 1
+    particles: true
+    icon: true

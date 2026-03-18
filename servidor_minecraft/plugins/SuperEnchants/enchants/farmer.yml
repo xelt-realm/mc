@@ -1,0 +1,22 @@
+display_name: "<green>Farmer"
+description:
+  - "<gray>Automatically replant seeds when harvesting."
+max_level: 1
+applicable_items:
+  - HOES
+trigger: BLOCK_BREAK
+target: NONE
+enchanting_table:
+  enabled: true
+  weight: 5
+  min_cost: 5
+  max_cost: 20
+
+villager_trades:
+  enabled: true
+  weight: 5
+  base_emerald_cost: 8
+  max_emerald_cost: 18
+actions:
+  replant:
+    type: replant
